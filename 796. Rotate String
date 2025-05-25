@@ -1,0 +1,9 @@
+Time Complexity : O(n^2) — because String.contains() uses brute-force substring search
+Space Complexity : O(n)
+
+class Solution {
+    public boolean rotateString(String s, String goal) {
+        if(s.length() != goal.length()) return false;
+        return (s+s).contains(goal);
+    }
+}

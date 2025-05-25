@@ -1,0 +1,19 @@
+Time Complexity: O(n)
+Space Complexity: O(1)
+
+class Solution {
+    public int maxDepth(String s) {
+        int depth = 0;
+        int maxdepth = 0;
+        for(char ch : s.toCharArray()){
+            if(ch == '('){
+                depth+=1;
+                maxdepth = Math.max(maxdepth , depth) ;
+            }
+            else if(ch == ')'){
+                depth -= 1;
+            }
+        }
+        return maxdepth;
+    }
+}

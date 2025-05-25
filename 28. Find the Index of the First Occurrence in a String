@@ -1,0 +1,11 @@
+Time Complexity : O(N * M) in the worst case
+N = length of haystack
+M = length of needle
+
+Space Complexity : O(1) 
+
+class Solution {
+    public int strStr(String haystack, String needle) {
+        return haystack.indexOf(needle);
+    }
+}
